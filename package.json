@@ -7,16 +7,28 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "keys": "strapi-keys -- --generate"
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-graphql": "4.13.3",
-    "@strapi/plugin-i18n": "4.13.3",
-    "@strapi/plugin-users-permissions": "4.13.3",
-    "@strapi/strapi": "4.13.3",
-    "better-sqlite3": "8.5.0",
-    "strapi-plugin-comments": "^2.2.15"
+    "@strapi/admin": "^5.63.0",
+    "@strapi/design-system": "^2.3.1",
+    "@strapi/i18n": "^5.63.0",
+    "@strapi/icons": "^2.3.1",
+    "@strapi/plugin-graphql": "^5.63.0",
+    "@strapi/plugin-users-permissions": "^5.63.0",
+    "@strapi/strapi": "^5.63.0",
+    "@swc/core": "^1.16.22",
+    "core-js-pure": "^3.51.0",
+    "esbuild": "^0.28.2",
+    "pg": "^8.11.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.6",
+    "strapi-keys": "^1.0.0",
+    "strapi-plugin-comments": "^3.2.6",
+    "styled-components": "^6.6.0"
   },
   "author": {
     "name": "A Strapi developer"
@@ -26,8 +38,8 @@
     "kind": "plugin"
   },
   "engines": {
-    "node": ">=16.0.0 <=20.x.x",
-    "npm": ">=6.0.0"
+    "node": ">=22.0.0 <=26.x.x",
+    "npm": ">=10.0.0"
   },
   "license": "MIT"
 }

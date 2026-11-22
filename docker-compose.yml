@@ -1,0 +1,58 @@
+services:
+  # -------------------------------------------------
+  # PostgreSQL service
+  # -------------------------------------------------
+  db:
+    image: postgres:15                     # official Postgres image (v15 is current LTS)
+    environment:
+      POSTGRES_USER: strapi               # ← database user
+      POSTGRES_PASSWORD: strapi           # ← password for that user
+      POSTGRES_DB: strapi                # ← database name Strapi will use
+    volumes:
+      - pgdata:/var/lib/postgresql/data    # persistent volume for the DB files
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U strapi"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  # -------------------------------------------------
+  # Strapi service
+  # -------------------------------------------------
+  strapi:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "1337:1337"                     # expose the dev server
+    environment:
+      # ----- DATABASE SETTINGS (read by Strapi) -----
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: db                  # <-- service name of the Postgres container
+      DATABASE_PORT: 5432
+      DATABASE_NAME: strapi
+      DATABASE_USERNAME: strapi
+      DATABASE_PASSWORD: strapi
+
+      # (optional) you can also expose the APP_KEYS etc. here,
+      # but they are already in .env – see below
+      # DATABASE_CLIENT: postgres
+      # DATABASE_HOST: db
+      # DATABASE_PORT: 5432
+      # DATABASE_NAME: strapi
+      # DATABASE_USERNAME: strapi
+      # DATABASE_PASSWORD: strapi
+
+    # Mount the source code so you can edit locally and have hot‑reload
+    volumes:
+      - ./:/app                         # mount the project root into /app inside container
+      - /app/node_modules               # keep container's node_modules out of host
+
+    # Run Strapi in dev mode (watch mode)
+    command: ["pnpm", "develop"]
+
+volumes:
+  pgdata:
+    driver: local
