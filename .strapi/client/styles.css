@@ -92,3 +92,11 @@
 @source not "/app/node_modules/.pnpm/strapi-plugin-comments@3.2.6_010dc82501a7e17ac9f562ad5bf606c5/node_modules/strapi-plugin-comments/dist/admin/**/*.stories.*";
 @source not "/app/node_modules/.pnpm/strapi-plugin-comments@3.2.6_010dc82501a7e17ac9f562ad5bf606c5/node_modules/strapi-plugin-comments/dist/admin/**/*.d.ts";
 @source not "/app/node_modules/.pnpm/strapi-plugin-comments@3.2.6_010dc82501a7e17ac9f562ad5bf606c5/node_modules/strapi-plugin-comments/dist/admin/**/*.map";
+@source "/app/src/admin";
+@source not "/app/src/admin/**/node_modules/**";
+@source not "/app/src/admin/**/__tests__/**";
+@source not "/app/src/admin/**/*.test.*";
+@source not "/app/src/admin/**/*.spec.*";
+@source not "/app/src/admin/**/*.stories.*";
+@source not "/app/src/admin/**/*.d.ts";
+@source not "/app/src/admin/**/*.map";

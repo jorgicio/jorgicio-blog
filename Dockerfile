@@ -24,12 +24,14 @@ COPY . .
 
 # Set environment variables that Strapi reads
 ENV NODE_ENV=development
-ENV DATABASE_CLIENT=postgres      
-ENV DATABASE_HOST=db              
+ENV DATABASE_CLIENT=postgres
+ENV DATABASE_HOST=db
 ENV DATABASE_PORT=5432
 ENV DATABASE_NAME=strapi
 ENV DATABASE_USERNAME=strapi
 ENV DATABASE_PASSWORD=strapi
+
+RUN pnpm build
 
 # Run the development server (watch mode) — pnpm adds node_modules/.bin to PATH
 CMD ["pnpm", "develop"]

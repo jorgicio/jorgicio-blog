@@ -9,7 +9,11 @@ import usersPermissions from "@strapi/plugin-users-permissions/strapi-admin";
 import comments from "strapi-plugin-comments/strapi-admin";
 import { renderAdmin } from "@strapi/strapi/admin";
 
+import customisations from "../../src/admin/app.js";
+
 renderAdmin(document.getElementById("strapi"), {
+  customisations,
+
   plugins: {
     i18n: i18N,
     graphql: graphql,
