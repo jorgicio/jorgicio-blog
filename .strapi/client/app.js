@@ -4,7 +4,6 @@
  */
 import "./styles.css";
 import i18N from "@strapi/i18n/strapi-admin";
-import graphql from "@strapi/plugin-graphql/strapi-admin";
 import usersPermissions from "@strapi/plugin-users-permissions/strapi-admin";
 import comments from "strapi-plugin-comments/strapi-admin";
 import { renderAdmin } from "@strapi/strapi/admin";
@@ -16,7 +15,6 @@ renderAdmin(document.getElementById("strapi"), {
 
   plugins: {
     i18n: i18N,
-    graphql: graphql,
     "users-permissions": usersPermissions,
     comments: comments,
   },

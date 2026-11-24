@@ -68,14 +68,6 @@
 @source not "/app/node_modules/.pnpm/@strapi+review-workflows@5.63.0_526fecd02b928ae3a1ab7a1433b97be6/node_modules/@strapi/review-workflows/dist/admin/**/*.stories.*";
 @source not "/app/node_modules/.pnpm/@strapi+review-workflows@5.63.0_526fecd02b928ae3a1ab7a1433b97be6/node_modules/@strapi/review-workflows/dist/admin/**/*.d.ts";
 @source not "/app/node_modules/.pnpm/@strapi+review-workflows@5.63.0_526fecd02b928ae3a1ab7a1433b97be6/node_modules/@strapi/review-workflows/dist/admin/**/*.map";
-@source "/app/node_modules/.pnpm/@strapi+plugin-graphql@5.63.0_1a9797bc987b9cd81fd55c824e150ebe/node_modules/@strapi/plugin-graphql/dist/admin";
-@source not "/app/node_modules/.pnpm/@strapi+plugin-graphql@5.63.0_1a9797bc987b9cd81fd55c824e150ebe/node_modules/@strapi/plugin-graphql/dist/admin/**/node_modules/**";
-@source not "/app/node_modules/.pnpm/@strapi+plugin-graphql@5.63.0_1a9797bc987b9cd81fd55c824e150ebe/node_modules/@strapi/plugin-graphql/dist/admin/**/__tests__/**";
-@source not "/app/node_modules/.pnpm/@strapi+plugin-graphql@5.63.0_1a9797bc987b9cd81fd55c824e150ebe/node_modules/@strapi/plugin-graphql/dist/admin/**/*.test.*";
-@source not "/app/node_modules/.pnpm/@strapi+plugin-graphql@5.63.0_1a9797bc987b9cd81fd55c824e150ebe/node_modules/@strapi/plugin-graphql/dist/admin/**/*.spec.*";
-@source not "/app/node_modules/.pnpm/@strapi+plugin-graphql@5.63.0_1a9797bc987b9cd81fd55c824e150ebe/node_modules/@strapi/plugin-graphql/dist/admin/**/*.stories.*";
-@source not "/app/node_modules/.pnpm/@strapi+plugin-graphql@5.63.0_1a9797bc987b9cd81fd55c824e150ebe/node_modules/@strapi/plugin-graphql/dist/admin/**/*.d.ts";
-@source not "/app/node_modules/.pnpm/@strapi+plugin-graphql@5.63.0_1a9797bc987b9cd81fd55c824e150ebe/node_modules/@strapi/plugin-graphql/dist/admin/**/*.map";
 @source "/app/node_modules/.pnpm/@strapi+plugin-users-permissions@5.63.0_6f8b741a308bac4b74dffcf3be7ebb1e/node_modules/@strapi/plugin-users-permissions/dist/admin";
 @source not "/app/node_modules/.pnpm/@strapi+plugin-users-permissions@5.63.0_6f8b741a308bac4b74dffcf3be7ebb1e/node_modules/@strapi/plugin-users-permissions/dist/admin/**/node_modules/**";
 @source not "/app/node_modules/.pnpm/@strapi+plugin-users-permissions@5.63.0_6f8b741a308bac4b74dffcf3be7ebb1e/node_modules/@strapi/plugin-users-permissions/dist/admin/**/__tests__/**";
