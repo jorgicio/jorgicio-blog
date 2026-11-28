@@ -33,4 +33,4 @@ This file is made for working with AI purposes.
  - **Ask first**: You're free to write in the `docs/` directory, but before you modify any code, ask first and show me the changes you're going to do.
  - **Never do**: Write files and codes in `src/` in a mayor way.
  - **Documentation and testing**: All documentation (both in English and Spanish) should go in the `docs` directory. The `tests/` should go there.
- - **Commits**: Write concise and explanatory messages to the commits and never push if I don't authorize you first. Also, `main` is the branch name.
+ - **Commits**: Write concise and explanatory messages to the commits and never push if I don't authorize you first. When you do a push, first show me the changes done and ask me first for authorization. Also, `main` is the branch name.
